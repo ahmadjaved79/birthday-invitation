@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333; 
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+.invitation-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.photo-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.photo-container:hover img {
+    transform: scale(1.1);
+}
+
+.invitation-text {
+    font-size: 18px;
+    line-height: 1.6; 
+    color:rgb(194, 119, 181);
+}
+
+.map-container {
+    margin-right: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .invitation-container {
+        padding: 20px;
+    }
+
+    .photo-container img {
+        height: 100%;
+    }
+}
+
+.hidden{
+    display: none; 
+   
+}
+.active{
+    color:rgb(129, 63, 112);
+    font-size: 20px; 
+    font-family: "Roboto";
+}
